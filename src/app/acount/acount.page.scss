@@ -1,0 +1,96 @@
+ion-content.background-acount{
+    --background-color:#ffffff;
+
+}
+
+ion-content.background-acount{
+    --background:url(../../assets/image/background-account.jpg) 0 0/100% 100% no-repeat;
+}
+
+.content-acount{
+    //position: fixed;
+    margin-top: 20px;
+    margin-left: 130px;
+    //margin-bottom: 30px;
+    position: relative;
+    z-index: 100px;
+    bottom: 30px;
+
+    
+}
+// .wellcome{
+//    list-style-image: url(../../assets/image/background.jpg) 0 0/100% 100% no-repeat;
+//     --background:url(../../assets/image/background.jpg) 0 0/100% 100% no-repeat;
+// }
+.icon-person{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 23px;
+
+
+}
+.icon-seting{
+   font-size: 30px;
+   margin-left: 80px;
+   margin-top: 40px;
+
+
+}
+.login-text-acount{
+    font-size: small;
+    color: #ffffff;
+    //text-align: center;
+    font-family: 'Nunito', sans-serif;
+   //text-transform: none;
+}
+.signin-text-acount{
+    font-size: small;
+    color: #ffffff;
+    //text-align: center;
+    font-family: 'Nunito', sans-serif;
+   //text-transform: none;
+}
+.card-outline{
+    font-size: 40px;
+    color: #a6a6a6;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.archive-outline{
+     font-size: 40px;
+    color: #a6a6a6;
+    margin-top: 20px;
+    margin-left: 50px;
+
+}
+.car-outline{
+     font-size: 40px;
+    color: #a6a6a6;
+    margin-top: 20px;
+    margin-left: 50px;
+
+}
+.chatbox-ellipses-outline{
+     font-size: 40px;
+    color: #a6a6a6;
+    margin-top: 20px;
+    margin-left: 50px;
+
+}
+.return-up-back-outline{
+     font-size: 40px;
+    color: #a6a6a6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    
+
+}
+.newspaper-outline{
+     font-size: 40px;
+    color: #a6a6a6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+
+}

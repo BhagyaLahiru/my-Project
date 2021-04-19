@@ -1,0 +1,112 @@
+
+ion-content.background{
+    --background:url(../../assets/image/background.jpg) 0 0/100% 100% no-repeat;
+
+}
+.content{
+    //position: fixed;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.button.action{
+    margin-left: 5px;
+}
+.back-button{
+    color: #ffffff;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.reg-label{
+    color: black;
+    padding-left: 10px;
+}
+
+.signin-text{
+    font-size: 30px,;
+    color: #000000;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    text-transform: none;
+}
+.from{
+    color: black;
+    
+}
+.forgot-label{
+    text-align: right;
+    color: black;
+    padding-right: 30px;
+    padding-top: 0px;
+    :active{
+color: red;
+    }
+    ::before{
+        color:red;
+    }
+
+}
+
+ion-input{
+    background-color: #afafaf;
+    border-radius: 5px;
+    font-size: small;
+}
+.ion-padding{
+    margin-right: 15px;
+   // margin-left: px;
+
+}
+
+.actionbutton{
+    background-color: turquoise;
+    color: black;
+   border-radius: 5px;
+    width: 100%;
+    
+    margin:30px 5px 0px 5px;
+    font-size: small;
+    font-family: 'Nunito', san-serif;
+}
+
+ion-checkbox{
+    background: #a04eff;
+    border-radius: 5px;
+    --height: 10px;
+    --width: 10px;
+    --checkmark-color: white;
+    --background-checked: #a04eff;
+    --border-color: #a04eff;
+}
+
+.line{
+    border-bottom: 1px solid grey;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    //margin-top: 10px;
+}
+.or{
+    color: black;
+}
+
+.fb-button{
+    background-color: #3b5998;
+    border-radius: 6px;
+    color: cornsilk;
+    margin-bottom: 30px;
+    font-family: 'Nunito', sans-serif;
+    text-transform: none;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.google-button{
+    background-color: #ea4335;
+    border-radius: 6px;
+    color: cornsilk;
+    margin-bottom: 40px;
+    font-family: 'Nunito', sans-serif;
+    text-transform: none;
+    margin-left: 30px;
+    margin-right: 30px;
+}

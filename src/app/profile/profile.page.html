@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>profile</ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="notification">
+        <ion-icon name="notifications-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+
+
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="primary" class="backbtn" routerLink="/home" routerDirection="back">
+        <img src='../../assets/back-dark.svg' />
+      </ion-button>
+    </ion-buttons> -->
+
+    
+  
+
+
+<!-- <ion-content> -->
+  <!-- <h1 class="title">Profile</h1> -->
+
+  <div class="profile-info">
+    <h1 class="title" style="color: black;">Profile</h1>
+    <div class="profile-pic">
+      <img src="\assets\image\profile.png" >
+    </div>>
+    <ion-col  *ngFor="let profile of datauser">
+      <ion-label position="floating">
+        <h2>Name : {{profile.firstName}}  {{profile.lastName}}</h2>
+    </ion-label>
+
+
+    <ion-label position="floating">
+      <h2>Email  Address : {{profile.email}} </h2>
+  </ion-label>
+
+  <ion-label position="floating">
+    <h2>Address : {{profile.address}}
+    </h2>
+</ion-label>
+
+
+<ion-label position="floating">
+  <h2>Phone Number : {{profile.phoneNumber}} </h2>
+</ion-label> 
+    <!-- <ion-item>
+      <ion-label position="floating">
+        <div>{{profile.fristName}}</div>
+
+        </ion-label>
+      <ion-input value="Code Crafts"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">{{profile.lastName}}</ion-label>
+      <ion-input value="Code Crafts"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">{{profile.address}}</ion-label>
+      <ion-input value="37/6 A"></ion-input>
+    </ion-item>
+      <ion-label position="floating">{{profile.email}}</ion-label>
+      <ion-input value="info@codecrafts.net"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">{{profile.phoneNumber}}</ion-label>
+      <ion-input value="+94 775 580 646"></ion-input>
+    </ion-item> -->
+    </ion-col>
+    <ion-button (click)="logOut()"  size="small"><p class="signin-text-acount">Log Out</p></ion-button>
+  </div>
+</ion-content>
+

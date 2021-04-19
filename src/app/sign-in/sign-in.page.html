@@ -1,0 +1,168 @@
+<div>
+  <ion-buttons class="back-button" slot="start">
+    <ion-back-button  defaultHref="acount"  icon="arrow-back-outline" text="back"></ion-back-button>
+  </ion-buttons>
+</div>
+
+
+<ion-content class="background">
+  <div class="content">
+    <div class="button-action">
+      <ion-button fill="clear" color="dark" size="midem">
+         <b><p class="signin-text">Sign UP</p></b>
+       </ion-button>
+  
+     </div>
+
+  <form [formGroup]="form">
+    <ion-grid>
+    <ion-row class="row01">
+      <ion-col size-sm="6" offset-sm="3" >
+        
+          <p position="floating" class="reg-label">First Name</p>
+          <ion-input 
+          type="text"
+          placeholder="First Name" 
+          formControlName="first">
+        </ion-input>
+      
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row02">
+      <ion-col size-sm="6" offset-sm="3">
+       
+          <p position="floating" class="reg-label">Last Name</p>
+          <ion-input 
+          type="text" 
+          placeholder="Last Name" 
+          formControlName="last">
+        </ion-input>
+        
+
+      </ion-col>
+    </ion-row>
+
+<!-- 
+    <ion-row>
+      <ion-col size-sm="6" offset-sm="3">
+        <ion-item>
+          <ion-label position="floating">Phone Number</ion-label>
+          <ion-input type="number"  formControlName="phone"></ion-input>
+        
+        </ion-item>
+
+      </ion-col>
+    </ion-row> -->
+
+
+    <ion-row class="row03">
+      <ion-col size-sm="6" offset-sm="3">
+       
+          <p position="floating" class="reg-label">Email Address</p>
+          <ion-input 
+          type="email"
+          placeholder="Email"  
+          formControlName="email">
+        </ion-input>
+        
+      
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row02">
+      <ion-col size-sm="6" offset-sm="3">
+        
+          <p position="floating" class="reg-label">Address</p>
+          <ion-input 
+          type="text"
+          placeholder="Address"
+          formControlName="address">
+        </ion-input>
+        
+       
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row02">
+      <ion-col size-sm="6" offset-sm="3">
+       
+          <p position="floating" class="reg-label">Phone Number</p>
+          <ion-input 
+          type="text" 
+          placeholder="Phone Number" 
+          formControlName="phoneNumber">
+        </ion-input>
+        
+       
+      </ion-col>
+    </ion-row>
+   
+
+    <!-- <ion-row>
+      <ion-col size-sm="6" offset-sm="3">
+        <ion-item>
+          <ion-label position="floating">User Name</ion-label>
+          <ion-input type="text" formControlName="user"></ion-input>
+        
+        </ion-item>
+
+      </ion-col>
+    </ion-row> -->
+    <ion-row class="row04">
+      <ion-col size-sm="6" offset-sm="3">
+        
+          <p position="floating" class="reg-label">Password</p>
+          <ion-input 
+          type="password"  
+          placeholder="Password"
+          formControlName="password">
+        </ion-input>
+        
+       
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row05">
+      <ion-button class="actionbutton" expand="full" fill="clear" style="text-transform: none;" (click)="onsingup()">Register</ion-button>
+    </ion-row>
+
+      
+  </ion-grid>
+  </form>
+
+</div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        
+      </ion-col>
+      <ion-col size="6" class="forgot-label">
+          <p >Forget Password?</p>
+        
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="line" size="4">
+
+      </ion-col>
+      <ion-col class="or" size="2" style="text-align: center;">
+      Or
+      </ion-col>
+      <ion-col class="line" size="4">
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-button class="fb-button" expand="full" fill="clear"><b>Facebook</b></ion-button>
+
+  <ion-button class="google-button" expand="full" fill="clear"><b>Google</b></ion-button>
+
+ 
+</ion-content>
+
+

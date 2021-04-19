@@ -1,0 +1,62 @@
+
+
+<div>
+  <ion-buttons class="back-button" slot="start">
+    <ion-back-button  defaultHref="acount"  icon="arrow-back-outline" text="back"></ion-back-button>
+  </ion-buttons>
+</div>
+
+
+<ion-content class="background">
+  <div class="content">
+    <div class="button-action">
+      <ion-button fill="clear" color="dark" size="midem">
+         <b><p class="signin-text">Login</p></b>
+       </ion-button>
+    </div>
+
+
+  <form [formGroup]="form">
+    <ion-grid>
+
+      <ion-row class="row03">
+        <ion-col size-sm="6" offset-sm="3">
+         
+            <p position="floating" class="reg-label">Email</p>
+            <ion-input 
+            type="email"
+            placeholder="Email"  
+            formControlName="user">
+          </ion-input>
+          
+        
+  
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row class="row04">
+        <ion-col size-sm="6" offset-sm="3">
+          
+            <p position="floating" class="reg-label">Password</p>
+            <ion-input 
+            type="password"  
+            placeholder="Password"
+            formControlName="password"
+            minlength="1">
+          </ion-input>
+          
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="row05">
+        <ion-button class="actionbutton" expand="full" fill="clear" style="text-transform: none;" (click)="login()">Login</ion-button>
+      </ion-row>
+  
+    </ion-grid>
+
+    <!-- <ion-button class="button1" [routerLink]="'/login'" (click)="loging()"   size="small"><p class="login-text-acount">LOG IN</p></ion-button> -->
+
+  </form>
+  </div>
+</ion-content>
