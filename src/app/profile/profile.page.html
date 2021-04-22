@@ -1,13 +1,4 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>profile</ion-title>
-    <ion-buttons slot="end">
-      <ion-button class="notification">
-        <ion-icon name="notifications-outline" color="dark"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content>
  
@@ -28,11 +19,12 @@
 <!-- <ion-content> -->
   <!-- <h1 class="title">Profile</h1> -->
 
-  <div class="profile-info">
-    <h1 class="title" style="color: black;">Profile</h1>
+  <div class="profile-info" style="background-image: url('/assets/image/profile-background-image.jpg');">
+    <div class="profile-backgroud">
+    <h1 class="title" style="color: black;font-weight: bold;font-family: monospace;">User Profile</h1>
     <div class="profile-pic">
       <img src="\assets\image\profile.png" >
-    </div>>
+    </div>
     <ion-col  *ngFor="let profile of datauser">
       <ion-label position="floating">
         <h2>Name : {{profile.firstName}}  {{profile.lastName}}</h2>
@@ -75,7 +67,13 @@
       <ion-input value="+94 775 580 646"></ion-input>
     </ion-item> -->
     </ion-col>
-    <ion-button (click)="logOut()"  size="small"><p class="signin-text-acount">Log Out</p></ion-button>
+    </div>
+   
+    <div class="logout-button">
+      <ion-button (click)="logOut()"  size="small"><p class="signin-text-acount">Log Out</p></ion-button>
+    </div>
+    
+
   </div>
 </ion-content>
 

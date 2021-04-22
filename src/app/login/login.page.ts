@@ -53,7 +53,7 @@ export class LoginPage implements OnInit {
         password: this.form.value.password
       }));
       console.log(res);
-      if (res.message == 'Success') {
+      if (res.message == "Success") {
         localStorage.setItem('userID', res.data[0].Id)
         const toast = await this.toastCtrl.create({
           message: 'Successfully login',
@@ -68,7 +68,7 @@ export class LoginPage implements OnInit {
       }
 
     } catch (err) {
-      console.log(err.error.message);
+      // console.log(err.error.message);
       const toast = await this.toastCtrl.create({
         message: 'Login failed',
         duration: 3000,

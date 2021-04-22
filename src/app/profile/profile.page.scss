@@ -1,18 +1,40 @@
 
 
+
 .profile-info {
-    background-color:white;
+    background-color: cornsilk;
+
     width: 100%;
     height: 100%;
+    margin: 0px;
+    padding: 40px;
+    padding-top: 100px;
 
 }
 h2{
     color: #000;
+    margin-left: 20px;
+    margin-bottom: 30px;
 }
 
 .profile-pic {
    width: 70px;
-   text-align: center;
-  
+   margin-left: 40%;
+   padding-bottom: 10px;
+     
 
+}
+.title{
+ text-align: center;
+ margin-top: 0px;
+ padding-top: 30px;
+}
+
+.profile-backgroud{
+    background-color: aqua;
+  
+    
+}
+.logout-button{
+    margin-top: 20px;
 }

@@ -15,11 +15,15 @@ export class ProfilePage implements OnInit {
   constructor( public profileServce:ProfileService ,   private router: Router,  ) {}
 
      ngOnInit() {
-      this.getDataUser();
-
+ 
      }
      datauser;
 
+     
+     ionViewWillEnter() {
+      this.getDataUser();
+      console.log("this is work")
+     }
       getDataUser() {
 
         let id = +localStorage.getItem('userID')
