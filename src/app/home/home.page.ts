@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -26,7 +27,7 @@ export class HomePage implements OnInit{
   sideimage01: any = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fhd%2520background%2F&psig=AOvVaw17YOg1EUBspqmjeu5JbeZA&ust=1604727174852000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPC1pdyY7ewCFQAAAAAdAAAAABAD';
 
   constructor(
-    private api: ApiService
+    private api: ApiService ,  private router: Router
   ) {}
    ngOnInit() {
     this.getDataGems();
@@ -39,6 +40,14 @@ export class HomePage implements OnInit{
       this.datagems = res.data;
 
     });
+  }
+
+
+  gemDtls(id){
+
+    localStorage.setItem('gemID' , id);
+this.router.navigateByUrl('/gem-proc');
+
   }
 
 }

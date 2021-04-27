@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import { from } from 'rxjs';
+import { CartService } from './cart.service';
+import { product } from '../../services/car.service';
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.page.html',
@@ -7,9 +9,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartPage implements OnInit {
 
-  constructor() { }
+   cart: Product[] = [];
+
+  constructor(private cartService: CartService) { }
 
   ngOnInit() {
+    this.cart = this.cartService.getCart();
   }
+  decreaseCartItem(product) {
+    this.cartService.decreaseProduct(product);
+  }
+  increaseCartItem(product){
+    this.cartService.addProduct(product);
+  }
+
+  removeCartItem(product) {
+    this.cartService.removeProduct(product);
+  }
+  getTotal() {
+    return this.cart.reduce((i, j) => i + j.price * j.amount, 0);
+  }
+
+ checkout() {
+   
+ }
 
 }
