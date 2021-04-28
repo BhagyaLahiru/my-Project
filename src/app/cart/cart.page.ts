@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { from } from 'rxjs';
 import { CartService } from './cart.service';
-import { product } from '../../services/car.service';
+import { Product } from './cart.service';
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.page.html',

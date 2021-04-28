@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, of } from 'rxjs';
 
-expect interface Product {
+export  interface Product {
   id: number;
   name: string;
   price: number;
@@ -38,7 +38,7 @@ export class CartService {
     let added = false;
     for (let gem of this.cart) {
       if (gem.id === product.id) {
-        gem.price += 1;
+        gem.amount += 1;
         added = true;
         break;
       }
@@ -53,8 +53,8 @@ export class CartService {
   decreaseProduct(product) {
     for ( let [index, gem] of this.cart.entries()){
       if (gem.id === product.id){
-        gem.price -= 1;
-        if (gem.price == 0) {
+        gem.amount -= 1;
+        if (gem.amount == 0) {
           this.cart.splice(index, 1);
         }
       }

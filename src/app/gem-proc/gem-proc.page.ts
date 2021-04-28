@@ -18,7 +18,7 @@ export class GemProcPage implements OnInit {
   constructor(public gemProcService: GemProcService,   private router: Router ,private cartService: CartService, private modalCtrl: ModalController) { }
 
   ngOnInit() {
-     this.products = this.cartService.getProducts();
+     this.products  = this.cartService.getProducts();
      this.cart = this.cartService.getCart();
      this.cartItemCount = this.cartService.getCartItemCount();
   }
