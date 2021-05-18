@@ -36,13 +36,16 @@ export class GemProcPage implements OnInit {
    
   }
   getDatagem() {
-    let id = +localStorage.getItem('gemID')
-     
-  this.gemProcService.getDatagem(id).subscribe((res:any) => {
-   console.log("GEEEM ",res.data);
-   this.gem = res.data[0];
 
- });
+    this.gem = JSON.parse(localStorage.getItem('gemID'))
+    console.log("GEEEM ",this.gem);
+//     let id = +localStorage.getItem('gemID')
+     
+//   this.gemProcService.getDatagem(id).subscribe((res:any) => {
+//    console.log("GEEEM ",res.data);
+//    this.gem = res.data[0];
+
+//  });
 
  }
 }
