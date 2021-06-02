@@ -9,12 +9,21 @@ import { Product } from './cart.service';
 })
 export class CartPage implements OnInit {
 
-   cart: Product[] = [];
+   cart = [];
+   amount: number = 0;
 
   constructor(private cartService: CartService) { }
+  ionViewWillEnter(){
+ 
+    this.cart = this.cartService.getCart();
+    this.getAmount();
+    // console.log(this.cart)
+  }
+  
 
   ngOnInit() {
-    this.cart = this.cartService.getCart();
+    console.log(this.cart)
+   
   }
   decreaseCartItem(product) {
     this.cartService.decreaseProduct(product);
@@ -30,8 +39,10 @@ export class CartPage implements OnInit {
     return this.cart.reduce((i, j) => i + j.price * j.amount, 0);
   }
 
- checkout() {
-   
+ getAmount() {
+  this.cart.forEach(prod => {
+    this.amount = this.amount + prod.amount * prod.price;
+  })
  }
 
 }

@@ -89,3 +89,53 @@ ion-footer {
         box-shadow: none !important;
     }
 }
+
+
+
+
+.description{
+    height: 40px;
+    line-height: 1.2;
+    margin-bottom:0.1px;
+    overflow: hidden;
+    padding: 0 5px;
+    font-size: 11px;
+    color: darkgray;
+}
+.card-image{
+    display: flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      margin-top: 10px;
+}
+
+.side-image{
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.card{
+  background-color: #ffffff;
+}
+.card-title{
+  color: black;
+  margin-left: 10px;
+}
+.button{
+  margin-bottom: 10px;
+  margin-left: 27px;
+ // margin-top: 0px;
+}
+.card-text{
+  color: black;
+  margin-left: 10px;
+  margin-top: 0.1px;
+  margin-bottom: 20px;
+}
+.gem-side-image{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.sideimage1{
+  margin-top: 20px;
+}

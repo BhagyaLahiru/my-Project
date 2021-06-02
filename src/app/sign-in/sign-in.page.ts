@@ -40,6 +40,10 @@ export class SignInPage implements OnInit {
           updateOn: 'blur',
           validators: [Validators.required]
         }),
+        nicNumber: new FormControl(null, {
+          updateOn: 'blur',
+          validators: [Validators.required]
+        }),
         password: new FormControl(null, {
           updateOn: 'blur',
           validators: [Validators.required, Validators.minLength(1)]
@@ -47,12 +51,6 @@ export class SignInPage implements OnInit {
       });
   }
 
-  // onCreateGem() {
-  //   if (!this.form.valid) {
-  //     return;
-  //   }
-  //   console.log(this.form);
-  // }
 
   async onsingup() {
     try {
@@ -62,7 +60,10 @@ export class SignInPage implements OnInit {
         email: this.form.value.email,
         address :this.form.value.address,
         phoneNumber :this.form.value.phoneNumber,
-        password: this.form.value.password
+        nic :this.form.value.nicNumber,
+        password: this.form.value.password,
+        userType: 0,
+        approve: 0
       }));
 
       if (res.message === 'Success') {
