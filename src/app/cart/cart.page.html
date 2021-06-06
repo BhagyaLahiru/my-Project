@@ -14,14 +14,15 @@
           <img src="{{product.gemImage}}">
         </ion-avatar>
         <ion-label>
-          <h2>name: {{product.name}}</h2>
-          <h2>price: {{product.price}}</h2>
-          <h3>amount: {{product.amount}}</h3>
+          <h2>name: {{product.gemName}}</h2>
+          <h2>price: {{product.price | currency:'Rs.' }}</h2>
+          <h3>Quntity: {{product.qq}}</h3>
+          <!-- <h3>amount: {{product.price * product.qq }}</h3> -->
         </ion-label>
       </ion-item>
   
         <ion-col size="1" class="ion-align-self-center">
-         Toatal Amount:  {{amount}}
+         Toatal Amount:  {{amount | currency:'Rs.'}}
         </ion-col>
         
         <ion-row class="ion-align-items-center">

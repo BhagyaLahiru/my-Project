@@ -52,6 +52,7 @@ export class HomePage implements OnInit {
   }
 
 
+
   gemDtls(id) {
 
     localStorage.setItem('gemID', JSON.stringify(id));
