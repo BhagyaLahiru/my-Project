@@ -8,6 +8,7 @@ import { ProfileService } from './profile.service';
   styleUrls: ['./profile.page.scss'],
 })
 export class ProfilePage implements OnInit {
+  userApprove = [];
  
  
 
@@ -31,6 +32,14 @@ export class ProfilePage implements OnInit {
          this.profileServce.getDataUser(id).subscribe((res:any) => {
         console.log(res.data);
         this.datauser = res.data;
+
+        let indx=0;
+        this.datauser.forEach((user)=>{
+          if(user.approve){
+            this.userApprove[indx] = user;
+            indx++;
+          }
+        });
   
       });
   }

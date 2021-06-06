@@ -25,7 +25,7 @@
     <div class="profile-pic">
       <img src="\assets\image\profile.png" >
     </div>
-    <ion-col  *ngFor="let profile of datauser">
+    <ion-col  *ngFor="let profile of userApprove">
       <ion-label position="floating">
         <h2>Name : {{profile.firstName}}  {{profile.lastName}}</h2>
     </ion-label>
@@ -44,6 +44,10 @@
 <ion-label position="floating">
   <h2>Phone Number : {{profile.phoneNumber}} </h2>
 </ion-label> 
+
+<ion-label position="floating">
+  <h2>NIC Number : {{profile.nic}} </h2>
+</ion-label>
     <!-- <ion-item>
       <ion-label position="floating">
         <div>{{profile.fristName}}</div>

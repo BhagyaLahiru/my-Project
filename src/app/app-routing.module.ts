@@ -43,6 +43,11 @@ const routes: Routes = [
     path: 'dashboard',
     loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
   },
+  {
+    path: 'meeting',
+    loadChildren: () => import('./meeting/meeting.module').then( m => m.MeetingPageModule)
+  },
+  
   // {
   //   path: 'payment-details',
   //   loadChildren: () => import('./payment-details/payment-details.module').then( m => m.PaymentDetailsPageModule)

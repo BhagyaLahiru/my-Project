@@ -64,7 +64,7 @@ export class LoginPage implements OnInit {
         toast.present();
         this.signservice._userIsAuthenticated  = true;
         this.form.reset();
-        this.router.navigateByUrl('/profile');
+        this.router.navigateByUrl('/home');
       }
 
     } catch (err) {
