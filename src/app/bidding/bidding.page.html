@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bid</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class = "container">
+    <div class="text">{{counter | time}}</div>
+  </div>
+
+  <div class = "container containerBorder" *ngIf = "max > 0">
+    <div class="text " *ngIf = "!worning">Max Amount:  {{max}}</div>
+    <div class="text worning " *ngIf = "worning">Max Amount: {{ max}}</div>
+  </div>
+
+  <form [formGroup]="form" (submit)="onSubmit()">
+    <ion-item>
+      <ion-label>Amount:</ion-label>
+      <ion-input type="number" formControlName="amount"></ion-input>
+    </ion-item>
+    <ion-button type="submit" [disabled]="!form.valid">Submit</ion-button>
+  </form>
+</ion-content>

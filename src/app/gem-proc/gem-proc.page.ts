@@ -17,6 +17,11 @@ export class GemProcPage implements OnInit {
 
   constructor(public gemProcService: GemProcService, private router: Router, private cartService: CartService, private modalCtrl: ModalController) { }
 
+  onBid(id: any, time: any) {
+    this.router.navigateByUrl('/bidding');
+    localStorage.setItem('gemId', id);
+    localStorage.setItem('time', time);
+  }
   ngOnInit() {
     //this.products  = this.cartService.getProducts();
     this.cart = this.cartService.getCart();

@@ -11,8 +11,9 @@
           </div>
           <p class="card-text">Rs: {{gem.price}}</p>
           <div class="button-two">
-            <ion-button class="button-buy">Buy now</ion-button>
-            <ion-button class="button-cart" (click)="addCartItem(gem)">Add to Cart</ion-button>
+            <ion-button *ngIf = "gem.gemBid" class="button-buy" (click)="onBid(gem.gemID, gem.bidingTime)" >Bid now</ion-button>
+            <ion-button *ngIf = "!gem.gemBid" class="button-buy">Buy now</ion-button>
+            <ion-button *ngIf = "!gem.gemBid" class="button-cart" (click)="addCartItem(gem)">Add to Cart</ion-button>
           </div></div>
       </ion-col>
     </div>

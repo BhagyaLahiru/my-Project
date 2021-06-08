@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'meeting',
     loadChildren: () => import('./meeting/meeting.module').then( m => m.MeetingPageModule)
   },
+  {
+    path: 'bidding',
+    loadChildren: () => import('./bidding/bidding.module').then( m => m.BiddingPageModule)
+  },
   
   // {
   //   path: 'payment-details',
